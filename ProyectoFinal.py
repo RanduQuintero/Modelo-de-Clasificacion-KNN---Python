@@ -6,7 +6,7 @@ import cv2
 import matplotlib.pyplot as plt 
 
 #Cargar los datos de entrenamiento del archivo rsTraining.dat a txt
-Datos= np.loadtxt("rsTrain.dat")
+Datos= np.loadtxt(r"C:\Users\Randu\Desktop\KNN - Python\rsTrain.dat")
 #Revolver los datos
 np.random.shuffle(Datos)
 
@@ -46,16 +46,16 @@ for j in DatosExp:
 #Esto para cada una de las imagenes (4)
 
 #Banda 1
-Imagen1=np.fromfile("band1.irs",dtype=np.int8)
+Imagen1=np.fromfile(r"C:\Users\Randu\Desktop\KNN - Python\band1.irs",dtype=np.int8)
 Banda1=np.reshape(Imagen1,(512,512))
 #Banda 2
-Imagen2=np.fromfile("band2.irs",dtype=np.int8)
+Imagen2=np.fromfile(r"C:\Users\Randu\Desktop\KNN - Python\band2.irs",dtype=np.int8)
 Banda2=np.reshape(Imagen2,(512,512))
 #Banda 3
-Imagen3=np.fromfile("band3.irs",dtype=np.int8)
+Imagen3=np.fromfile(r"C:\Users\Randu\Desktop\KNN - Python\band3.irs",dtype=np.int8)
 Banda3=np.reshape(Imagen3,(512,512))
 #Banda 4
-Imagen4=np.fromfile("band4.irs",dtype=np.int8)
+Imagen4=np.fromfile(r"C:\Users\Randu\Desktop\KNN - Python\band4.irs",dtype=np.int8)
 Banda4=np.reshape(Imagen4,(512,512))
 
 #Creamos un vector de caracteristicas con las bandas
