@@ -3,7 +3,7 @@ import numpy as np
 from sklearn.metrics import accuracy_score
 from sklearn.neighbors import KNeighborsClassifier
 import cv2
-import matplotlib.pyplot as plt 
+
 
 #Cargar los datos de entrenamiento del archivo rsTraining.dat a txt
 Datos= np.loadtxt(r"C:\Users\Randu\Desktop\KNN - Python\rsTrain.dat")
@@ -42,7 +42,7 @@ for j in DatosExp:
 	DatoExp_X.append(j[0:4])
 
 
-#Cargar las imagenes binarias y especificamos el tamaño de la imagen
+#Cargar las imagenes y especificamos el tamaño de la imagen
 #Esto para cada una de las imagenes (4)
 
 #Banda 1
